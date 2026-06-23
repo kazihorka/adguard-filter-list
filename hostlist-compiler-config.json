@@ -1,5 +1,5 @@
 {
-  "name": "ppfeufer/adguard-filter-list",
+  "name": "v_merged_list",
   "description": "DNS block list that can be used for AdGuardHome. (Does not work with Pi-hole)",
   "homepage": "https://github.com/ppfeufer/adguard-filter-list",
   "license": "GPLv3",
@@ -84,16 +84,6 @@
       ]
     },
     {
-      "name": "KOR: YousList",
-      "source": "https://raw.githubusercontent.com/yous/YousList/master/hosts.txt",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
       "name": "NOR: Dandelion Sprouts nordiske filtre",
       "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
       "type": "adblock",
@@ -124,16 +114,6 @@
       ]
     },
     {
-      "name": "SWE: Frellwit's Swedish Hosts File",
-      "source": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
       "name": "CHN: anti-AD",
       "source": "https://anti-ad.net/easylist.txt",
       "type": "adblock",
@@ -156,16 +136,6 @@
     {
       "name": "IRN: Unwanted Iranian domains",
       "source": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt",
-      "type": "adblock",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
-      "name": "MKD: Macedonian Pi-hole Blocklist",
-      "source": "https://raw.githubusercontent.com/cchevy/macedonian-pi-hole-blocklist/master/hosts.txt",
       "type": "adblock",
       "transformations": [
         "RemoveComments",
@@ -264,48 +234,8 @@
       ]
     },
     {
-      "name": "Lightswitch05 - Facebook",
-      "source": "https://www.github.developerdan.com/hosts/lists/facebook-extended.txt",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
-      "name": "Lightswitch05 - AMP Hosts",
-      "source": "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
-      "name": "Lightswitch05 - Dating Services",
-      "source": "https://www.github.developerdan.com/hosts/lists/dating-services-extended.txt",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
       "name": "Lightswitch05 - Tracking Aggressive",
       "source": "https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
-      "name": "PolishFiltersTeam - KADhosts",
-      "source": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
       "type": "hosts",
       "transformations": [
         "RemoveComments",
@@ -374,16 +304,6 @@
       ]
     },
     {
-      "name": "Firebog - Prigent Crypto",
-      "source": "https://v.firebog.net/hosts/Prigent-Crypto.txt",
-      "type": "adblock",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
       "name": "Firebog - Prigent Malware",
       "source": "https://v.firebog.net/hosts/Prigent-Malware.txt",
       "type": "adblock",
@@ -404,38 +324,8 @@
       ]
     },
     {
-      "name": "VeleSila - yhosts",
-      "source": "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
-      "name": "RooneyMcNibNug - PiHole Stuff (SNAFU)",
-      "source": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt",
-      "type": "adblock",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
       "name": "anudeepND - Adservers",
       "source": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
-      "name": "anudeepND - Facebook",
-      "source": "https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt",
       "type": "hosts",
       "transformations": [
         "RemoveComments",
@@ -536,26 +426,6 @@
     {
       "name": "FadeMind - Additional Risks",
       "source": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
-      "name": "bigdargon - hostsVN",
-      "source": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
-      "name": "jdlingyu - ad-wars",
-      "source": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts",
       "type": "hosts",
       "transformations": [
         "RemoveComments",
@@ -774,16 +644,6 @@
       ]
     },
     {
-      "name": "FadeMind - hosts.extras/add.2o7Net",
-      "source": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts",
-      "type": "hosts",
-      "transformations": [
-        "RemoveComments",
-        "Compress",
-        "Validate"
-      ]
-    },
-    {
       "name": "Malvertising list by Disconnect",
       "source": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
       "type": "adblock",
@@ -842,8 +702,127 @@
         "Compress",
         "Validate"
       ]
-    }
-    ,
+    },
+    {
+      "name": "HaGeZi's Windows/office",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_63.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    },
+    {
+      "name": "PhisTank",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    },
+    {
+      "name": "URL tank",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    },
+    {
+      "name": "PhishingArmy",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    },
+    {
+      "name": "Stalkware",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_31.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    },
+    {
+      "name": "AWAAvenue",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    },    
+    {
+      "name": "CZ",
+      "source": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    }, 
+    {
+      "name": "CZ COI",
+      "source": "https://raw.githubusercontent.com/kazihorka/coi.rizikove.pihole/7b49532c632abd538641dd165b40f2457b847d87/coi_241223.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    }, 
+    {
+      "name": "1",
+      "source": "https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    },    
+    {
+      "name": "2",
+      "source": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    }, 
+    {
+      "name": "3",
+      "source": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    }, 
+    {
+      "name": "Hazegi Ultimate",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_49.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Validate"
+      ]
+    }, 
     {
       "name": "FR: French filters RedFlagDomains",
       "source": "https://dl.red.flag.domains/red.flag.domains.txt",

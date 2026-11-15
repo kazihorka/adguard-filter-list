@@ -19,9 +19,27 @@ jobs:
 
       - name: Install Hostlist Compiler
         run: npm install -g @adguard/hostlist-compiler
-
+        
+      - name: Filter unreachable sources
+        run: |
+          cp hostlist-compiler-config.json config.filtered.json
+          jq -r '.sources[].source' hostlist-compiler-config.json | while read -r url; do
+            case "$url" in
+              http*) ;;
+              *) continue ;;
+            esac
+            if curl -fsSL --max-time 60 -o /dev/null "$url"; then
+              echo "OK   $url"
+            else
+              echo "::warning::Skipped unreachable source: $url"
+              jq --arg u "$url" '.sources |= map(select(.source != $u))' config.filtered.json > tmp.json
+              mv tmp.json config.filtered.json
+            fi
+          done
+          test "$(jq '.sources | length' config.filtered.json)" -gt 0
+          
       - name: Compile blocklist
-        run: hostlist-compiler -c hostlist-compiler-config.json -o blocklist
+        run: hostlist-compiler -c config.filtered.json -o blocklist
 
       - name: Commit and push
         run: |
